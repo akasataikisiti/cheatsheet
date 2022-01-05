@@ -5,6 +5,8 @@ for use github.make directory ~/dotfiles and previous etc files(~/.vimrc is symb
 :! <linuxコマンド>   : リナックスコマンドを実行
 :r!<linuxコマンド>   : リナックスコマンドを実行、結果をテキスト上に表示
 :term                 : Start-up tarminal-mode in vim."exit" command use to end.
+q:                   :コマンドの履歴を表示、選択してエンターで実行
+                      Ctrl+cで選択し表示するだけもできる
 ###Cheat Part1###
 <Leader> = \
 <Leader>ev  :    open setting file(~/dotfiles/.vimrc)
