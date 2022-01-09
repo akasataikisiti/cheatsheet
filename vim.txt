@@ -89,6 +89,7 @@ fugitive画面で対象ファイルにカーソルを合わせてdvを押下
 ds[e]      : [e](囲い)を削除     idiom => delete surround
 cs[e][d]   : [e](囲い)を[d](囲い)で囲む idiom => change surround
 ys [mo] [d] : mo(モーション)を使って、[d](囲い)で囲む
+yss [d]     : 一行を[d]で囲む (改行無し)
 S [d]       : [d](囲い)で囲む（注：ヴィジュアルモード時のみ）
 ###Cheat Part9 ###vim-command
 :set filetype=html   :phpファイルのインデントがおかしい時の対応
