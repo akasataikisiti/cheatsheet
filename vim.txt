@@ -57,8 +57,8 @@ m{a-z}   : mark the cursl position
 <C-o>    : カーソルジャンプの履歴を戻る
 <C-i>    : カーソルジャンプの履歴を進める
 :ju      : Display cursor history
-g;       : Return edit hisotry
-g,       : Advance edit history
+g;       : Return edit hisotry(変更履歴を遡る)
+g,       : Advance edit history(変更履歴を進める)
 :changes : Display edit history
 <C-]>    : カーソル下の関数定義にジャンプ
 g<C-]>   : カーソル下の関数定義にジャンプ（候補選択）
