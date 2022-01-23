@@ -142,6 +142,7 @@ f   : find a file within your project (same as <CR>) git管理化のファイル
   /変えたい単語をハイライトする(*か/で)
   /cwをおして変更後単語を入力してEscする。
   /n.を押して次次に変更を行う。飛ばしたい場合はそのままnで次に行く
+2. 補完候補を決定するのは,補完候補を<c-o>,<c-n>で選択して<c-y>で決定する。
 ###Point #####
 Vim command is consists of "motion" and "operator".
 so "dG" is "delete"+"to end of file" : No need to wirte ":
@@ -155,5 +156,6 @@ yap    :Yank Around the Paragraph.(this command is made based on natural languag
 :echo expand('%:p:h')  :表示中のファイルのパスを表示
 :put=execute('com')     :vimの結果表示系コマンドの結果をファイルに書き出す。(comはユーザ定義コマンド一覧表示コマンド)
 ###Tips3(snipet)
+:FzfSnippet   : 使用できるSnipetの一覧表示
 <c-j>   : 次の編集地点へ飛ぶ
 <c-k>   : 前の編集地点へ飛ぶ
