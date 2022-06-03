@@ -100,6 +100,7 @@ cs[e][d]   : [e](囲い)を[d](囲い)で囲む idiom => change surround
 ys [mo] [d] : mo(モーション)を使って、[d](囲い)で囲む
 yss [d]     : 一行を[d]で囲む (改行無し)
 S [d]       : [d](囲い)で囲む（注：ヴィジュアルモード時のみ）
+ysiw)       : 単語を()で囲う
 ###Cheat Part10 ###vim-command
 :set filetype=html   :phpファイルのインデントがおかしい時の対応
 :set filetype?       :filetypeの確認
