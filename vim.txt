@@ -7,6 +7,9 @@ for use github.make directory ~/dotfiles and previous etc files(~/.vimrc is symb
 :term                 : Start-up tarminal-mode in vim."exit" command use to end.
 q:                   :コマンドの履歴を表示、選択してエンターで実行
                       Ctrl+cで選択し表示するだけもできる
+:! %                 :現在のファイル名が渡される
+:!chmod a+x %        :現在のファイルにa+xの権限を付与する
+
 ###Cheat Part1###
 <Leader> = \
 <Leader>ev  :    open setting file(~/dotfiles/.vimrc)
@@ -180,6 +183,7 @@ yap    :Yank Around the Paragraph.(this command is made based on natural languag
 ###Tips2
 :echo expand('%:p:h')  :表示中のファイルのパスを表示
 :put=execute('com')     :vimの結果表示系コマンドの結果をファイルに書き出す。(comはユーザ定義コマンド一覧表示コマンド)
+:put =execute(':lua print(vim.lsp.get_log_path())') :応用 luaで実行した結果を挿入
 :set filetype? => filetypeを確認
 :echo &filetype => filetypeを確認(:set filetype?)と同じ
 :h ex-cmd-index   => exコマンドの一覧表示
@@ -221,3 +225,4 @@ plugged/vim-surround/plugin/surround.vim 612行目をコメントアウトした
 call CocAction('jumpDefinition', 'drop')   :定義元にジャンプ
 call CocAction('format')  :formatを行う
 CocCommand workspace.showOutput  :色々な拡張機能とかの状態を見る
+CocDiagnostic  : 現在のファイルで出力されているエラーやinfoの一覧を出せる
