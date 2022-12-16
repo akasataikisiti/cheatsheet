@@ -226,3 +226,11 @@ call CocAction('jumpDefinition', 'drop')   :定義元にジャンプ
 call CocAction('format')  :formatを行う
 CocCommand workspace.showOutput  :色々な拡張機能とかの状態を見る
 CocDiagnostic  : 現在のファイルで出力されているエラーやinfoの一覧を出せる
+:execute "normal \<Plug>(coc-rename)" => Exeコマンドでcoc-rename行う
+キーバインドして使うべきコマンドをあえてexeで呼び出す
+
+### fugitiveGrep ###
+Ggrep: 外部グレップを使用する。(自分の場合はlinuxの初期設定grep)
+       ステータスに上がっていない変更は検知しないので注意
+使用例）
+Ggrep -q "new\sError": クイックフィックスにnew Error検索一覧を表示する
