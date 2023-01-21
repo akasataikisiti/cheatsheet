@@ -56,6 +56,7 @@ zm : 全て畳み込む
 
 ###Cheat Part5####Use tab
 :tabnew <filename> : open file in new tab
+:tabe : open new tab
 gt                 : move next tab
 gT                 : move prev tab
 :tt               : throw the currently focused file To new tab(added script in .vimrc)
@@ -234,3 +235,13 @@ Ggrep: 外部グレップを使用する。(自分の場合はlinuxの初期設�
        ステータスに上がっていない変更は検知しないので注意
 使用例）
 Ggrep -q "new\sError": クイックフィックスにnew Error検索一覧を表示する
+
+
+### vimwiki ###
+:set conceallevel=0 とすることで表示になっているテキストも見ることができる
+ちなみにjsonとかのダブルクォート非表示になる問題はvimrcに以下を追加すると解決する
+  * autocmd Filetype json setl conceallevel=0
+filetypeがjsonの場合ローカルのconceallevelを0に設定する
+
+### vim-man ###
+ctr-] : man内のリンク先に移動
